@@ -1,5 +1,5 @@
 <h1 align="center">Cordys CRM</h1>
-<h3 align="center">集信息化、数字化、智能化于一体的开源 AI CRM 系统</h3>
+<h3 align="center">集信息化、数字化、智能化于一体的开源 CRM 系统</h3>
 <p align="center">
   <a href="https://github.com/1Panel-dev/CordysCRM/releases/latest"><img src="https://img.shields.io/github/v/release/1Panel/CordysCRM" alt="Latest release"></a>
   <a href="https://github.com/1Panel-dev/CordysCRM"><img src="https://img.shields.io/github/stars/1Panel-dev/CordysCRM?color=%231890FF&style=flat-square" alt="Stars"></a>    
@@ -54,4 +54,3 @@ docker run -d --name=cordys --restart=always -p 8080:8080 -v ~/.cordys:/opt/cord
 ## License
 
 本仓库遵循 [FIT2CLOUD Open Source License](LICENSE) 开源协议，该许可证本质上是 GPLv3，但有一些额外的限制。
-
