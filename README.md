@@ -47,8 +47,8 @@ docker run -d --name=cordys --restart=always -p 8080:8080 -v ~/.cordys:/opt/cord
 
 - [x] 2024.09：写下第一行代码
 - [x] 2025.06：v1.0 开发完成
-- [x] 2025.07：替换飞致云使用7年的Salesforce
-- [x] 2025.08：完成和 SQLBot 和 DataEase的对接
+- [x] 2025.07：吃自己的狗粮，成功替换飞致云使用 7 年的 Salesforce CRM
+- [x] 2025.08：完成和 SQLBot 和 DataEase 的对接
 - [ ] 2025.09：开始对外公测
 - [ ] 2025.10：完成和 MaxKB 的对接
 - [ ] 2025.11：代码开源、正式发布
