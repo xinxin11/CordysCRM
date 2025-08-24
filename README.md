@@ -43,6 +43,16 @@ docker run -d --name=cordys --restart=always -p 8080:8080 -v ~/.cordys:/opt/cord
     <img alt="Cordys CRM UI" src="https://github.com/user-attachments/assets/fb7ef62f-2d65-48da-bf38-2538a664edbb"   />
   </tr>
 
+## Roadmap
+
+- [x] 2024.09：写下第一行代码
+- [x] 2025.06：v1.0 开发完成
+- [x] 2025.07：替换飞致云使用7年的Salesforce
+- [x] 2025.08：完成和 SQLBot 和 DataEase的对接
+- [ ] 2025.09：开始对外公测
+- [ ] 2025.10：完成和 MaxKB 的对接
+- [ ] 2025.11：代码开源、正式发布
+
 ## 飞致云旗下的其他明星项目
 
 - [1Panel](https://github.com/1panel-dev/1panel/) - 现代化、开源的 Linux 服务器运维管理面板
