@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://github.com/1Panel-dev/CordysCRM/releases/latest"><img src="https://img.shields.io/github/v/release/1Panel/CordysCRM" alt="Latest release"></a>
   <a href="https://github.com/1Panel-dev/CordysCRM"><img src="https://img.shields.io/github/stars/1Panel-dev/CordysCRM?color=%231890FF&style=flat-square" alt="Stars"></a>    
-  <a href="https://hub.docker.com/r/1panel/cordys"><img src="https://img.shields.io/docker/pulls/1panel/cordys?label=downloads" alt="Download"></a><br/>
+  <a href="https://hub.docker.com/r/1panel/cordys"><img src="https://img.shields.io/docker/pulls/1panel/cordys-crm?label=downloads" alt="Download"></a><br/>
 </p>
 
 <hr/>
@@ -25,8 +25,7 @@ Cordys CRM 的核心优势是：
 
 ### 安装部署
 
-准备一台 Linux 服务器，执行以下一键安装脚本。  
-在运行 Cordys CRM 前，请确保已安装好 [Docker](https://docs.docker.com/get-docker/)。
+准备一台 Linux 服务器，安装好 [Docker](https://docs.docker.com/get-docker/) 后，执行以下一键安装脚本。  
 
 ```bash
 docker run -d \
@@ -35,7 +34,7 @@ docker run -d \
   -p 8081:8081 \
   -v ~/./cordys/logs:/opt/cordys/logs \
   -v ~/./cordys/data:/opt/cordys/data \
-  1panel/cordys-crm:v1.0.0
+  1panel/cordys-crm
 ```
 
 你也可以通过 [1Panel 应用商店](https://1panel.cn/) 快速部署 Cordys CRM。
