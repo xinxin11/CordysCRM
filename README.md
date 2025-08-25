@@ -23,15 +23,30 @@ Cordys CRM 的核心优势是：
 
 ## 快速开始
 
-```bash
-# Linux 服务器
-docker run -d --name=cordys --restart=always -p 8080:8080 -v ~/.cordys:/opt/cordys 1panel/cordys
+### 安装部署
 
-# 用户名: admin
-# 密码: CordysCRM
+准备一台 Linux 服务器，执行以下一键安装脚本。  
+在运行 Cordys CRM 前，请确保已安装好 [Docker](https://docs.docker.com/get-docker/)。
+
+```bash
+docker run -d \
+  --name cordys-crm \
+  --restart unless-stopped \
+  -p 8081:8081 \
+  -v ~/./cordys/logs:/opt/cordys/logs \
+  -v ~/./cordys/data:/opt/cordys/data \
+  1panel/cordys-crm:v1.0.0
 ```
 
 你也可以通过 [1Panel 应用商店](https://1panel.cn/) 快速部署 Cordys CRM。
+
+### 访问方式
+
+- 在浏览器中打开: http://<你的服务器IP>:8081/
+- 用户名: `admin`
+- 密码: `CordysCRM`
+
+### 联系我们
 
 安装完成后，可以参考此 [快速入门指南](https://jlx18gc3up.feishu.cn/docx/VMJzdCipnoj5fYxcbakcWQSAnCh)。
 
