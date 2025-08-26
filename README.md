@@ -8,9 +8,9 @@
 
 <hr/>
 
-**Cordys CRM** 是飞致云出品的中国首个开源 AI CRM，集信息化、数字化和智能化于一体。
+**Cordys CRM** 是飞致云出品的中国首个开源 AI CRM，集信息化、数字化和智能化于一体。Cordys（/ˈkɔːrdɪs/） 由 Cord 和 System 两个单词组成，意思是“连接的系统”或“关系的纽带系统”，这与客户关系管理（CRM）的核心理念——建立和维护客户关系——高度契合。
 
-> Cordys CRM 预计在2025年底正式开源并发布，现已开启公测。
+> 注：Cordys CRM 预计在2025年底正式开源并发布，现已开启公测。
 
 <img alt="Cordys CRM Overview" src="https://resource.fit2cloud.com/1panel/cordys-crm/img/overview.png" />
 
