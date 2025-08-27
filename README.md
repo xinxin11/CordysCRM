@@ -97,6 +97,6 @@ docker run -d \
 你可以基于 Cordys CRM 的源代码进行二次开发，但是需要遵守以下规定：
 
 - 不能替换和修改 Cordys CRM 的 Logo 和版权信息；
-- 二次开发后的衍生作品后必须必须遵守 GPL V3 的开源义务。
+- 二次开发后的衍生作品后必须遵守 GPL V3 的开源义务。
 
 如需商业授权，请联系 support@fit2cloud.com 。
