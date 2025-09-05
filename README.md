@@ -76,8 +76,9 @@ docker run -d \
 - [x] 2025.07：吃自己的狗粮，成功替换飞致云使用 7 年的 Salesforce CRM
 - [x] 2025.08：完成和 SQLBot 和 DataEase 的对接
 - [x] 2025.08.27：[v1.1.5](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.1.5) 发布，开始公测
-- [x] 2025.08.27：[v1.1.6](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.1.6) 发布，修复 Bug
-- [x] 2025.09.01：[v1.1.7](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.1.7) 发布，修复 Bug
+- [x] 2025.08.27：[v1.1.6](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.1.6) 发布
+- [x] 2025.09.01：[v1.1.7](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.1.7) 发布
+- [x] 2025.09.05：[v1.1.8](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.1.8) 发布
 - [ ] 2025.10：完成和 MaxKB 的对接
 - [ ] 2025.11：代码开源、正式发布
 
