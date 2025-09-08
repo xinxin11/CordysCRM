@@ -48,6 +48,7 @@ jobs:
             cd /tmp
             rm -rf site
             unzip site.zip
+            mkdir -p /opt/cordys/docs/
             rm -rf /opt/cordys/docs/*
             mv /tmp/site/* /opt/cordys/docs
             /usr/local/nginx/sbin/nginx -s reload
