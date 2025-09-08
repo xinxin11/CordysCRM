@@ -131,6 +131,12 @@ body {
   box-shadow: var(--shadow-sm);
 }
 
+.logo__text {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
 .nav__menu {
   display: flex;
 }
