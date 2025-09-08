@@ -8,6 +8,7 @@
 
     // DOM Elements
     const header = document.getElementById('header');
+    const topBar = document.getElementById('top-bar');
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
     const navLinks = document.querySelectorAll('.nav__link');
@@ -22,6 +23,7 @@
     function init() {
         setupScrollHandler();
         setupNavigation();
+        setupTopBarDropdown();
         setupSmoothScroll();
         setupAnimations();
         setupAccessibility();
@@ -29,17 +31,40 @@
 
     /**
      * Scroll Handler
-     * Adds shadow to header when scrolled
+     * Adds shadow to header when scrolled and manages top-bar visibility
      */
     function setupScrollHandler() {
+        let isTopBarHidden = false;
+        
         function handleScroll() {
             const currentScrollY = window.scrollY;
+            const scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
             
             // Add scrolled class for styling
             if (currentScrollY > 50) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
+            }
+
+            // Handle top-bar visibility
+            if (topBar) {
+                if (scrollDirection === 'down' && currentScrollY > 100 && !isTopBarHidden) {
+                    // Hide top-bar when scrolling down
+                    topBar.classList.add('hidden');
+                    header.classList.add('top-bar-hidden');
+                    isTopBarHidden = true;
+                } else if (scrollDirection === 'up' && isTopBarHidden) {
+                    // Show top-bar when scrolling up
+                    topBar.classList.remove('hidden');
+                    header.classList.remove('top-bar-hidden');
+                    isTopBarHidden = false;
+                } else if (currentScrollY <= 50 && isTopBarHidden) {
+                    // Always show top-bar when near the top
+                    topBar.classList.remove('hidden');
+                    header.classList.remove('top-bar-hidden');
+                    isTopBarHidden = false;
+                }
             }
 
             lastScrollY = currentScrollY;
@@ -127,6 +152,49 @@
 
         // Animate hamburger menu
         animateHamburger(false);
+    }
+
+    /**
+     * Top Bar Dropdown Handler
+     * Manages the top bar dropdown menu functionality
+     */
+    function setupTopBarDropdown() {
+        const dropdownBtn = document.getElementById('dropdownBtn');
+        const dropdownContent = document.getElementById('dropdownContent');
+        
+        if (dropdownBtn && dropdownContent) {
+            // Toggle dropdown on button click
+            dropdownBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdownContent.classList.toggle('show');
+                
+                // Update aria-expanded attribute for accessibility
+                const isExpanded = dropdownContent.classList.contains('show');
+                dropdownBtn.setAttribute('aria-expanded', isExpanded);
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!dropdownBtn.contains(e.target) && !dropdownContent.contains(e.target)) {
+                    dropdownContent.classList.remove('show');
+                    dropdownBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+            
+            // Handle escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && dropdownContent.classList.contains('show')) {
+                    dropdownContent.classList.remove('show');
+                    dropdownBtn.setAttribute('aria-expanded', 'false');
+                    dropdownBtn.focus();
+                }
+            });
+            
+            // Initialize aria attributes
+            dropdownBtn.setAttribute('aria-expanded', 'false');
+            dropdownBtn.setAttribute('aria-haspopup', 'true');
+        }
     }
 
     function animateHamburger(isOpen) {
