@@ -1,0 +1,126 @@
+site_name: 'Cordys CRM 文档'
+site_url: 'https://cordys.cn/docs'
+site_description: 'Cordys CRM 是 飞致云 出品的中国首个开源 AI CRM，集信息化、数字化和智能化于一体'
+site_author: 'Cordys CRM 开源项目组'
+repo_name: 'Cordys CRM'
+repo_url: 'https://github.com/1Panel-dev/CordysCRM'
+
+edit_uri: https://github.com/1Panel-dev/CordysCRM-Docs
+theme:
+    name: 'material'
+    logo: 'img/logo-white.png'
+    favicon: 'img/cordys.png'
+    language: 'zh'
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - django
+    palette:
+        - scheme: default
+          accent: teal
+          toggle:
+              icon: material/weather-sunny
+              name: Switch to dark mode
+        - scheme: slate
+          accent: teal
+          toggle:
+              icon: material/weather-night
+              name: Switch to light mode
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.indexes
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - search.share
+        - header.autohide
+        - content.tabs.link
+    custom_dir: "theme"
+nav:
+    - 产品介绍: index.md
+    - 快速入门: quick_start.md
+    - 更新日志: changelog.md
+    - 系统架构: system_arch.md
+    - 安装部署:
+        - 1Panel 安装: installation/1panel_installtion.md
+        - 离线安装: installation/offline_installtion.md
+        - 在线安装: installation/online_installtion.md
+        - 离线升级: installation/offline_upgrade.md
+        - 命令行工具: installation/cli.md
+        - 源码运行: installation/source_run.md
+    - 功能手册:
+        - 添加组织架构:
+              - 从企业微信同步: user_manual/sync-from-wecom.md
+              - 手动管理组织架构: user_manual/org-manage.md
+
+        - 配置角色与权限:  user_manual/role_permission.md
+        - 配置业务表单: user_manual/form_config.md
+        - 产品信息录入: user_manual/product_entry.md
+        - 日常销售管理: user_manual/sales_manage.md
+        - 移动端访问:  user_manual/mobile.md
+        - 接入 SQLBot 实现智能问数:  user_manual/sqlbot.md
+        - 接入 DataEase 实现数据分析:  user_manual/dataease.md
+
+    - 联系我们: contact.md
+    
+markdown_extensions:
+    - admonition
+    - codehilite:
+          guess_lang: True
+          linenums: False
+    - toc:
+          permalink: True
+    - footnotes
+    - attr_list
+    - def_list
+    - tables
+    - abbr
+    - md_in_html
+    - pymdownx.extra
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+          emoji_generator: !!python/name:pymdownx.emoji.to_png
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist
+    - pymdownx.tilde
+    - pymdownx.betterem
+    - pymdownx.progressbar
+#    - lightgallery
+    - pymdownx.tabbed:
+        alternate_style: true
+
+extra_css:
+    - css/extra.css
+
+copyright: Copyright &copy; 2014-2025 <a href="https://www.fit2cloud.com">杭州飞致云信息科技有限公司</a>, All Rights Reserved. <a href="http://www.beian.miit.gov.cn" target="_blank">浙ICP备14038283号-9</a>
+
+plugins:
+    - search:
+          lang:
+              - en
+              - ja
+          separator: '[\s\-\.]+'
+extra:
+    version:
+      provider: mike
+      warning: false
+    analytics:
+      provider: google
+      property: G-NG51348CBW
+    social:
+      - icon: fontawesome/brands/github
+        link: https://github.com/1Panel-dev/CordysCRM
+      - icon: fontawesome/solid/envelope
+        link: mailto:support@fit2cloud.com
+      - icon: fontawesome/solid/phone
+        link: tel://400-052-0755
