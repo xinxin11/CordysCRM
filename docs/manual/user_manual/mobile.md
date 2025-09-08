@@ -46,16 +46,16 @@
 
 ![应用配置](../img/user_manual/wecom-app-config.png)
 
-### 移动端访问
+### 微信工作台访问
 
 后台配置完成后：
 1. 打开手机企业微信
 2. 进入【工作台】
 3. 找到配置的小程序并点击进入
 
-![企业微信工作台](../img/user_manual/wecom-workbench.png)
-
-![小程序访问](../img/user_manual/wecom-miniprogram.png)
+| 工作台访问 | 移动端界面 |
+| :---: | :---: |
+| ![手机浏览器访问](../img/user_manual/wecom-workbench.png) | ![移动端界面](../img/user_manual/wecom-miniprogram.png) |
 
 ---
 
@@ -63,6 +63,6 @@
 
 在手机端浏览器地址栏输入 Cordys CRM 部署地址，即可完成系统访问。
 
-![手机浏览器访问](../img/user_manual/mobile-browser-access.png)
-
-![移动端界面](../img/user_manual/wecom-miniprogram.png)
+| 手机浏览器访问 | 移动端界面 |
+| :---: | :---: |
+| ![手机浏览器访问](../img/user_manual/mobile-browser-access.png) | ![移动端界面](../img/user_manual/wecom-miniprogram.png) |
