@@ -2,7 +2,7 @@
 
 !!! Tip ""
 
-    Cordys CRM 是 飞致云 出品的中国首个开源 AI CRM，集信息化、数字化和智能化于一体。Cordys（/ˈkɔːrdɪs/）由“Cord”（连接之绳）与“System”（系统）融合而成，寓意“关系的纽带系统”，诠释了 CRM 的本质：连接客户，缔造长期价值。
+    Cordys CRM 是飞致云出品的中国首个开源 AI CRM，集信息化、数字化和智能化于一体。Cordys（/ˈkɔːrdɪs/）由“Cord”（连接之绳）与“System”（系统）融合而成，寓意“关系的纽带系统”，诠释了 CRM 的本质：连接客户，缔造长期价值。
 
 ![整体架构](./img/index/system-arch.png)
 
