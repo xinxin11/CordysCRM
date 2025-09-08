@@ -1,19 +1,15 @@
 
-[data-md-color-primary=indigo] {
-    --md-primary-fg-color: #52BEAD !important;
-}
 .md-header {
-  background: linear-gradient(180deg, #00a6ab 0.85%, #00a6ab 95.97%);
+  background-color: #00a6ab;
   top: 48px;
 }
 
 .md-footer {
-  background-color: rgb(37,43,60);background: linear-gradient(180deg, #00a6ab 0.85%, #00a6ab 95.97%);
-
+  background-color: #00a6ab;
 }
 
 .md-tabs {
-  background-color:  #52BEAD;
+  background-color: #00a6ab;
 }
 
 .md-footer-nav__link {
@@ -38,7 +34,7 @@
 .progress-bar {
   height: 1.2rem;
   float: left;
-  background-color:  #52BEAD;
+  background-color: #2979ff;
 }
 
 .progress {
@@ -107,6 +103,12 @@
   background-color: #fc6554;
 }
 
+/*
+.md-footer-meta {
+  background-color: inherit;
+}
+*/
+
 .md-grid {
   margin-left: 1rem;
   margin-right: auto;
@@ -118,36 +120,37 @@
 }
 
 .x-pack-span {
-    background-color: #52BEAD;
-    padding: 2px 5px;
-    color: #ffffff;
+  background-color: #00a6ab;
+  padding: 2px 5px;
+  color: #ffffff;
 }
 
-.new-span {
-    background-color: seagreen;
-    padding: 2px 5px;
-    color: #ffffff;
+.png-lable-span {
+  margin-left: 30%;
 }
 
-
-aside.md-banner.md-banner--warning {
-  display: none !important;
-}
-
-/** 增加边框绿条  **/
 .md-typeset .admonition,
 .md-typeset details {
   border-width: 0;
   border-left-width: 4px;
 }
-.md-typeset .admonition.abstract, .md-typeset details.abstract{
-  border-left-color: #52BEAD;
-}
-.md-typeset p, .md-typeset ul, .md-typeset ol, .md-typeset dl, .md-typeset blockquote {
+
+.md-typeset p,.md-typeset ul,.md-typeset ol,.md-typeset dl,.md-typeset blockquote {
   display: flow-root;
-  margin: 1em 0;
+  margin: 1em 0
 }
-/** 显示所有标题  **/
-.admonition-title {
-  display: block;  
+
+.md-typeset .admonition.ms-abstract,
+.md-typeset details.ms-abstract {
+  border-color: rgb(170, 80, 191);
+}
+
+.md-typeset .ms-abstract > .admonition-title,
+.md-typeset .ms-abstract > summary {
+  background-color: rgba(170, 80, 191, 0.1);
+}
+
+.md-typeset .ms-abstract > .admonition-title::before,
+.md-typeset .ms-abstract > summary::before {
+  background-color: rgb(170, 80, 191);
 }
