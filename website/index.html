@@ -30,16 +30,53 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar" id="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <a href="https://www.fit2cloud.com/" class="top-bar-brand">
+                    <img src="images/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云" style="height: 20px; width: auto;" />
+                </a>
+            </div>
+            <div class="top-bar-right">
+                <div class="top-bar-dropdown" id="topBarDropdown">
+                    <button class="top-bar-dropdown-btn" id="dropdownBtn">
+                        了解飞致云旗下开源产品 <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="top-bar-dropdown-content"  id="dropdownContent">
+                        <a href="https://maxkb.cn" class="top-bar-dropdown-item">
+                            <strong>MaxKB</strong> - 基于大模型的知识库问答系统
+                        </a>
+                        <a href="https://jumpserver.org/" class="top-bar-dropdown-item">
+                            <strong>JumpServer</strong> - 广受欢迎的开源堡垒机
+                        </a>
+                        <a href="https://dataease.cn" class="top-bar-dropdown-item">
+                            <strong>DataEase</strong> - 人人可用的开源 BI 工具
+                        </a>
+                        <a href="https://1panel.cn/" class="top-bar-dropdown-item">
+                            <strong>1Panel</strong> - 现代化、开源的 Linux 面板
+                        </a>
+                        <a href="https://www.fit2cloud.com/metersphere/index.html" class="top-bar-dropdown-item">
+                            <strong>MeterSphere</strong> - 新一代的开源持续测试工具
+                        </a>
+                        <a href="https://halo.run/" class="top-bar-dropdown-item">
+                            <strong>Halo</strong> - 强大易用的开源建站工具
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <div class="nav__brand">
-                    <a href="https://cordys.cn/" class="nav__logo">                        
-                        <span class="logo__icon">C</span>
-                        <span class="logo__text">Cordys CRM</span>
-                    </a>
+                    <a href="https://cordys.cn/"><img src="images/logo.png" alt="MaxKB Logo" style="height: 48px; margin-right: 0.5em;" /></a>
                 </div>
+
+
                 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -63,6 +100,8 @@
 
     <!-- Main Content -->
     <main class="main">
+
+
         <!-- Hero Section -->
         <section class="hero" id="hero">
             <div class="hero__background">
@@ -115,26 +154,7 @@
                                 
                                 <div class="qr__container">
                                     <div class="qr__code">
-                                        <div class="qr__pattern">
-                                            <div class="qr__corner qr__corner--tl"></div>
-                                            <div class="qr__corner qr__corner--tr"></div>
-                                            <div class="qr__corner qr__corner--bl"></div>
-                                            <div class="qr__corner qr__corner--br"></div>
-                                            <div class="qr__center">
-                                                <div class="qr__logo">C</div>
-                                            </div>
-                                            <div class="qr__dots">
-                                                <div class="qr__dot"></div>
-                                                <div class="qr__dot"></div>
-                                                <div class="qr__dot"></div>
-                                                <div class="qr__dot"></div>
-                                                <div class="qr__dot"></div>
-                                                <div class="qr__dot"></div>
-                                                <div class="qr__dot"></div>
-                                                <div class="qr__dot"></div>
-                                                <div class="qr__dot"></div>
-                                            </div>
-                                        </div>
+                                            <img src="images/qrcode.png" alt="二维码" />
                                     </div>
                                     <p class="qr__label">微信扫码加群</p>
                                 </div>
