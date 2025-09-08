@@ -55,7 +55,7 @@
 
 | 工作台访问 | 移动端界面 |
 | :---: | :---: |
-| ![手机浏览器访问](../img/user_manual/wecom-workbench.png) | ![移动端界面](../img/user_manual/wecom-miniprogram.png) |
+| ![工作台访问](../img/user_manual/wecom-workbench.png) | ![移动端界面](../img/user_manual/wecom-miniprogram.png) |
 
 ---
 
