@@ -6,6 +6,18 @@
 ```bash
 git clone git@github.com:1Panel-dev/CordysCRM.git
 ```
+### 创建虚拟环境 并激活
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+
+```
+### 安装 pymdown-extensions 和 mkdocs-material
+```bash
+pip install pymdown-extensions
+pip install mkdocs-material
+```
 
 ### 安装依赖
 ```bash
