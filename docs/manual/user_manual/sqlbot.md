@@ -23,15 +23,12 @@ SQLBot 的安装教程请参考：[SQLBot 操作手册](https://dataease.cn/sqlb
 凭证配置用于确保小助手能够访问 Cordys CRM 的 API，直接复制以下参数即可：
 
 | 凭证名称 | 源系统凭证类型 | 目标凭证名称 | 目标凭证位置 |
-|---------|---------------|-------------|-------------|
+|---------|---------------|-------------|:-----------:|
 | csrfToken | localStorage | csrf-token | header |
 | sessionId | localStorage | x-auth-token | header |
 
 ![凭证配置](../img/user_manual/sqlbot-credentials.png)
-
-> **注意**：如果在问数过程中出现 401 错误，请检查这几个参数是否一致。
-
----
+> **注意**：如果在问数过程中出现 401 错误，请检查上图这几个参数是否一致。
 
 ## 配置 SQLBot 应用
 
