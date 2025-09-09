@@ -18,9 +18,11 @@ SQLBot 的安装教程请参考：[SQLBot 操作手册](https://dataease.cn/sqlb
 
 ![创建 SQLBot 应用](../img/user_manual/sqlbot-create-app.png)
 
-### 凭证配置
+### 配置接口
 
-凭证配置用于确保小助手能够访问 Cordys CRM 的 API，直接复制以下参数即可：
+- **接口地址**：填写 Cordys CRM 的部署地址，如 `http://CordysCRM-URL/db/structure` 
+
+- **凭证配置**：用于确保小助手能够访问 Cordys CRM 的 API，直接复制以下参数即可：
 
 | 凭证名称 | 源系统凭证类型 | 目标凭证名称 | 目标凭证位置 |
 |---------|---------------|-------------|:-----------:|
