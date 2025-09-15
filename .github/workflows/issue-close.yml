@@ -13,4 +13,4 @@ jobs:
         if: ${{ !github.event.issue.pull_request }}
         with:
           actions: 'remove-labels'
-          labels: '状态:待处理'
+          labels: '待处理'
