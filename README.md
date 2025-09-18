@@ -50,7 +50,7 @@ docker run -d \
 
 ### 联系我们
 
-安装完成后，可以参考此 [快速入门指南](https://cordys.cn/docs/)。
+安装完成后，可以参考此 [在线文档](https://cordys.cn/docs/) 来使用 Cordys CRM。
 
 在公测期间，欢迎大家参与并反馈宝贵意见。你可以通过以下微信交流群与 Cordys CRM 开源项目组进行交流和反馈。
 
