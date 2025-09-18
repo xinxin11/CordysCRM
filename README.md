@@ -1,5 +1,5 @@
 <h1 align="center">Cordys CRM</h1>
-<h3 align="center">集信息化、数字化、智能化于一体的开源 CRM 系统</h3>
+<h3 align="center">新一代的开源 AI CRM 系统</h3>
 <p align="center">
   <a href="https://github.com/1Panel-dev/CordysCRM/releases"><img src="https://img.shields.io/github/v/release/1Panel-dev/CordysCRM" alt="Latest release"></a>
   <a href="https://github.com/1Panel-dev/CordysCRM"><img src="https://img.shields.io/github/stars/1Panel-dev/CordysCRM?color=%231890FF&style=flat-square" alt="Stars"></a>    
@@ -8,7 +8,7 @@
 
 <hr/>
 
-**Cordys CRM** 是 [飞致云](https://fit2cloud.com/) 出品的中国首个开源 AI CRM，集信息化、数字化和智能化于一体。
+**Cordys CRM** 是新一代的开源 AI CRM 系统，是集信息化、数字化、智能化于一体的「客户关系管理系统」，由 [飞致云](https://fit2cloud.com/) 匠心出品。
 
 Cordys（/ˈkɔːrdɪs/）由“Cord”（连接之绳）与“System”（系统）融合而成，寓意“关系的纽带系统”，诠释了 CRM 的本质：连接客户，缔造长期价值。
 
@@ -80,7 +80,7 @@ docker run -d \
 - [x] 2025.09.01：[v1.1.7](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.1.7) 发布
 - [x] 2025.09.05：[v1.1.8](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.1.8) 发布
 - [x] 2025.09.12：[v1.1.9](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.1.9) 发布
-- [ ] 2025.10：完成和 MaxKB 的对接
+- [x] 2025.09.19：[v1.2.0](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.2.0) 发布，完成和 MaxKB 的对接
 - [ ] 2025.11：代码开源、正式发布
 
 ## 技术栈
