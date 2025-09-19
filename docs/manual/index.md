@@ -1,4 +1,4 @@
-<img width="2056" height="464" alt="image" src="https://github.com/user-attachments/assets/3442e9bb-3172-44b1-9cb1-94d4a7667aba" /># 产品介绍
+# 产品介绍
 
 !!! Tip ""
 
