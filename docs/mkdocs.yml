@@ -60,6 +60,7 @@ nav:
         - 接入 SQLBot 实现智能问数:  user_manual/sqlbot.md
         - 接入 DataEase 实现数据分析:  user_manual/dataease.md
         - 接入 MaxKB 实现销售智能体:  user_manual/maxkb.md
+    - MCP 服务: mcp_server.md
     - 更新日志: changelog.md
     - 联系我们: contact.md
     
