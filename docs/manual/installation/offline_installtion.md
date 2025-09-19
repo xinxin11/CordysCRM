@@ -3,7 +3,7 @@
 !!! Abstract ""
     部署服务器要求：
 
-    - 操作系统: Ubuntu 22.04 / CentOS 7.6 64 位系统
+    - 操作系统: 支持主流 Linux 发行版本（基于 Debian / RedHat，包括国产操作系统）
     - CPU/内存: 4 核 8 G
     - 磁盘空间: 100G
 
