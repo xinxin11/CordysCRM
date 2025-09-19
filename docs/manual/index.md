@@ -1,4 +1,4 @@
-# 产品介绍
+<img width="2056" height="464" alt="image" src="https://github.com/user-attachments/assets/3442e9bb-3172-44b1-9cb1-94d4a7667aba" /># 产品介绍
 
 !!! Tip ""
 
@@ -24,7 +24,7 @@
       借助 [DataEase](https://github.com/dataease/dataease) 强大的嵌入式能力和 [SQLBot](https://github.com/dataease/SQLBot) 的智能问数能力，轻松助力企业实现高效的数据分析和可视化；
 
     - **AI 加持**    
-      借助 [MaxKB](https://github.com/1Panel-dev/MaxKB) 强大的智能体开发能力，轻松助力企业实现各类销售智能体。
+      开放 MCP 接口，借助 [MaxKB](https://github.com/1Panel-dev/MaxKB) 强大的智能体开发能力，轻松助力企业实现各类销售智能体。
 
 ## 3 界面展示
 
