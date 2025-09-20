@@ -115,7 +115,7 @@ extra:
       warning: false
     analytics:
       provider: google
-      property: G-NG51348CBW
+      property: G-3TWT2BFLFM
     social:
       - icon: fontawesome/brands/github
         link: https://github.com/1Panel-dev/CordysCRM
