@@ -13,7 +13,6 @@
     ```
     
     注意：详细步骤参考 [**1Panel 快速安装 Cordys CRM**](../installation/1panel_installtion/) 。
-    详细步骤参考 [**1Panel 快速安装 Cordys CRM**](../installation/1panel_installtion/) 。
     
     如果是用于生产环境，推荐使用 [**离线包方式**](../installation/offline_installtion/) 进行部署。
 
