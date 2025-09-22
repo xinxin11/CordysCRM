@@ -26,7 +26,19 @@
 3. 点击「添加智能体」
 4. 录入基本信息并粘贴上述脚本
 
-> **注意**：在嵌入脚本的src中添加API KEY信息，复制 AK${ak}&sk=${sk}&username=${username} 粘贴即可，系统会自动获取。
+> **注意**  
+> Cordys CRM 支持获取以下变量传递到 MaxKB 应用中
+>
+> | 参数名    | 说明           | 示例                  |
+> |-----------|----------------|-----------------------|
+> | `ak`      | Access Key     | `ak=yourAk`           |
+> | `sk`      | Secret Key     | `sk=yourSk`           |
+> | `username`| 用户名         | `username=admin`      |
+>
+> 示例：
+> ```
+> 在嵌入脚本的 src 中追加 ak=${ak}&sk=${sk}&asker=${username}
+> ```
 
 ![添加智能体](../img/user_manual/agent-add.png)
 
