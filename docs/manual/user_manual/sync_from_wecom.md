@@ -25,11 +25,10 @@
 
 #### 4. 安全配置
 - 配置应用的"可信 IP 白名单"，确保调用 API 时不被拒绝
-- 如果需要接收企业微信推送的事件（如成员变更），需：
-  - 部署 HTTPS 服务
-  - 配置回调 URL
+- 部署 HTTPS 服务
+- 配置回调 URL
 
-👉 官方文档：[回调模式](https://developer.work.weixin.qq.com/document/path/91770)
+> :warning: **注意:** Cordys CRM 部署地址必须是可信域名，不能使用 IP 地址或自己做的内网穿透地址。
 
 ![配置](../img/user_manual/wecom-ip.png)
 

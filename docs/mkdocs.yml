@@ -50,8 +50,8 @@ nav:
         - 命令行工具: installation/cli.md
     - 功能手册:
         - 添加组织架构:
-              - 从企业微信同步: user_manual/sync-from-wecom.md
-              - 手动管理组织架构: user_manual/org-manage.md
+              - 从企业微信同步: user_manual/sync_from_wecom.md
+              - 手动管理组织架构: user_manual/org_manage.md
         - 配置角色与权限:  user_manual/role_permission.md
         - 配置业务表单: user_manual/form_config.md
         - 产品信息录入: user_manual/product_entry.md
