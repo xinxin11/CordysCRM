@@ -37,7 +37,7 @@
 >
 > 示例：
 > ```
-> 在嵌入脚本的 src 中追加 ak=${ak}&sk=${sk}&asker=${username}
+> 在嵌入脚本的 src 中追加 ak=${ak}&sk=${sk}&username=${username}
 > ```
 
 ![添加智能体](../img/user_manual/agent-add.png)
