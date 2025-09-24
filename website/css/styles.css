@@ -137,15 +137,6 @@ body {
   color: var(--text-primary);
 }
 
-.nav__menu {
-  display: flex;
-}
-
-.nav__list {
-  display: flex;
-  list-style: none;
-  gap: var(--spacing-lg);
-}
 
 .nav__link {
   text-decoration: none;
@@ -741,32 +732,56 @@ body {
 
 @media (max-width: 768px) {
   /* Navigation */
-  .nav__menu {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: var(--bg-primary);
-    border-bottom: 1px solid var(--border-color);
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow-md);
-  }
-  
-  .nav__menu.active {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .nav__list {
-    flex-direction: column;
-    gap: 0;
-    padding: var(--spacing-md);
-  }
-  
+
+.nav__center {
+  display: none;
+  position: static;
+  transform: none;
+  order: 1;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.nav__right {
+  flex-direction: column;
+  gap: 10px;
+  order: 2;
+  width: 100%;
+}
+
+.nav__button {
+  width: 80%;
+  justify-content: center;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav__center,
+.nav__right {
+  display: none;
+}
+
+.nav.mobile-open .nav__center,
+.nav.mobile-open .nav__right {
+  display: flex;
+  background-color: white;
+}
+
+.nav.mobile-open {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.nav.mobile-open .nav__center {
+  display: flex;
+  position: static;
+  transform: none;
+  order: 1;
+  justify-content: center;
+}
   .nav__link {
     padding: var(--spacing-md);
     border-bottom: 1px solid var(--border-color);
@@ -880,4 +895,49 @@ body {
   .hero__background {
     display: none;
   }
+}
+
+.nav__button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav__button--outline {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.nav__button--outline:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.nav__button--primary {
+    background: var(--primary-color);
+    color: #fff;
+    border: 2px solid var(--primary-color);
+}
+
+.nav__button--primary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.nav__center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }

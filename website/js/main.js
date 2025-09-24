@@ -10,7 +10,9 @@
     const header = document.getElementById('header');
     const topBar = document.getElementById('top-bar');
     const navToggle = document.getElementById('nav-toggle');
-    const navMenu = document.getElementById('nav-menu');
+    const navCenter = document.querySelector('.nav__center');
+    const navRight = document.querySelector('.nav__right');
+    const nav = document.querySelector('.nav');
     const navLinks = document.querySelectorAll('.nav__link');
 
     // State
@@ -100,7 +102,7 @@
 
         // Close menu when clicking outside
         document.addEventListener('click', function(event) {
-            if (isMenuOpen && !navMenu.contains(event.target) && !navToggle.contains(event.target)) {
+            if (isMenuOpen && !nav.contains(event.target)) {
                 closeMenu();
             }
         });
@@ -129,28 +131,18 @@
     }
 
     function openMenu() {
-        navMenu.classList.add('active');
+        nav.classList.add('mobile-open');
         navToggle.classList.add('active');
-        document.body.style.overflow = 'hidden'; // Prevent scroll when menu is open
+        document.body.style.overflow = 'hidden';
         isMenuOpen = true;
-
-        // Animate hamburger menu
         animateHamburger(true);
-
-        // Focus management for accessibility
-        const firstLink = navMenu.querySelector('.nav__link');
-        if (firstLink) {
-            setTimeout(() => firstLink.focus(), 300);
-        }
     }
 
     function closeMenu() {
-        navMenu.classList.remove('active');
+        nav.classList.remove('mobile-open');
         navToggle.classList.remove('active');
         document.body.style.overflow = '';
         isMenuOpen = false;
-
-        // Animate hamburger menu
         animateHamburger(false);
     }
 
@@ -315,7 +307,9 @@
             if (e.key === 'Tab' && isMenuOpen) {
                 updateFocusableElements();
                 const menuFocusable = focusableElements.filter(el => 
-                    navMenu.contains(el) || navToggle.contains(el)
+                    (navCenter && navCenter.contains(el)) || 
+                    (navRight && navRight.contains(el)) || 
+                    navToggle.contains(el)
                 );
                 
                 if (menuFocusable.length > 0) {
@@ -453,5 +447,7 @@
         console.log('🚀 Cordys CRM Website initialized successfully');
         console.log('📱 Responsive breakpoints: Mobile(<768px), Tablet(768-1024px), Desktop(>1024px)');
     }
+
+
 
 })();
