@@ -33,16 +33,19 @@
 !!! Tip ""
     Cordys CRM 的 MCP Server 提供以下工具。
 
-| 工具名称              | 功能描述   | 输入参数参考 input_schema       | 输出结果                                                                  |
-|-------------------|--------|---------------------------|-----------------------------------------------------------------------|
-| search            | 通用查询   | keyword: 检索, pageSize: 10 | {"lead": {"list": null,"total": 0,"pageSize": 10,"current": 1}}       |
-| add_lead          | 添加线索   | 自定义表单内容                   | {"content":[{"type":"text","text":{"name":"xxx公司"}}],"isError":false} |
-| add_account       | 添加客户   | 自定义表单内容                   | {"content":[{"type":"text","text":{"name":"xxx公司"}}],"isError":false} |
-| add_opportunity   | 添加商机   | 自定义表单内容                   | {"content":[{"type":"text","text":{"name":"xxx公司"}}],"isError":false} |
-| add_contact       | 添加联系人  | 自定义表单内容                   | {"content":[{"type":"text","text":{"name":"xxx公司"}}],"isError":false} |
-| add_follow_record | 添加跟进记录 | 自定义表单内容                   | {"content":[{"type":"text","text":{"name":"xxx公司"}}],"isError":false} |
-| add_follow_plan   | 添加跟进计划 | 自定义表单内容                   | {"content":[{"type":"text","text":{"name":"xxx公司"}}],"isError":false} |
-
+| 工具名称            | 功能描述     | 输入参数参考 input_schema | 输出结果                |
+|---------------------|------------|--------------------------|------------------------|
+| global_search       | 通用查询     | 查询关键字                | 查询结果集 ｜ 失败原因   |
+| add_lead            | 添加线索     | 自定义表单内容            | 添加成功对象 ｜ 失败原因 |
+| add_account         | 添加客户     | 自定义表单内容            | 添加成功对象 ｜ 失败原因 |
+| add_opportunity     | 添加商机     | 自定义表单内容            | 添加成功对象 ｜ 失败原因 |
+| add_contact         | 添加联系人   | 自定义表单内容            | 添加成功对象 ｜ 失败原因 |
+| add_follow_record   | 添加跟进记录 | 自定义表单内容            | 添加成功对象 ｜ 失败原因 |
+| add_follow_plan     | 添加跟进计划 | 自定义表单内容            | 添加成功对象 ｜ 失败原因 |
+| update_account      | 更新客户     | 需要更新的属性和值        | 更新成功信息 ｜ 失败原因 |
+| update_lead         | 更新线索     | 需要更新的属性和值        | 更新成功信息 ｜ 失败原因 |
+| update_opportunity  | 更新商机     | 需要更新的属性和值        | 更新成功信息 ｜ 失败原因 |
+| update_contact      | 更新联系人   | 需要更新的属性和值        | 更新成功信息 ｜ 失败原因 |
 
 !!! Tip ""
     `Tools` 将 Cordys CRM 系统中配置的动态表单参数输出为标准的 `input_schema`，客户端需根据该格式传递正确参数。
@@ -156,4 +159,7 @@
 !!! Tip ""
     第二步: 通过`Agent`对话验证工具可用性
 
+**添加客户**
 ![Trae.png](img/mcp/trae.png)
+**修改客户**
+![Tool.png](img/mcp/client.png)
