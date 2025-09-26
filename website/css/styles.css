@@ -733,23 +733,6 @@ body {
 @media (max-width: 768px) {
   /* Navigation */
 
-.nav__center {
-  display: none;
-  position: static;
-  transform: none;
-  order: 1;
-  width: 100%;
-  text-align: center;
-  margin: 20px 0;
-}
-
-.nav__right {
-  flex-direction: column;
-  gap: 10px;
-  order: 2;
-  width: 100%;
-}
-
 .nav__button {
   width: 80%;
   justify-content: center;
@@ -761,7 +744,7 @@ body {
 
 .nav__center,
 .nav__right {
-  display: none;
+  display: none !important;
 }
 
 .nav.mobile-open .nav__center,
@@ -788,7 +771,7 @@ body {
   }
   
   .nav__toggle {
-    display: flex;
+    display: none !important;
   }
   
   /* Hero Section */
