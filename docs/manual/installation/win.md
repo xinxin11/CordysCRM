@@ -1,6 +1,6 @@
 # windows 安装教程
 
-## 1 环境要求
+## 1. 环境要求
 
  * 操作系统：win10/11 都可
  * 支持虚拟化技术, 至少4GB内存
@@ -34,13 +34,12 @@
 3. 容器启动成功示例
     ![容器启动成功](../img/installation/win_cmd_success.png)
    
-## 3 登录访问
+## 3. 登录访问
 
 * 安装成功后即可通过浏览器访问地址 `http://IP 地址:8081` (本机可用 127.0.0.1)，并使用默认的管理员用户和密码登录 Cordys CRM。
 
     ```
     用户名：admin
-
     默认密码：CordysCRM
     ```
 ![访问 Cordys CRM](../img/installation/login.png)
