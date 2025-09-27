@@ -159,7 +159,4 @@
 !!! Tip ""
     第二步: 通过`Agent`对话验证工具可用性
 
-**添加客户**
 ![Trae.png](img/mcp/trae.png)
-**修改客户**
-![Tool.png](img/mcp/client.png)
