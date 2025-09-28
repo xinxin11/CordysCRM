@@ -82,6 +82,7 @@ docker run -d \
 - [x] 2025.09.05：[v1.1.8](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.1.8) 发布
 - [x] 2025.09.12：[v1.1.9](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.1.9) 发布
 - [x] 2025.09.19：[v1.2.0](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.2.0) 发布，开放 MCP Server，并完成和 MaxKB 的对接
+- [x] 2025.09.26：[v1.2.1](https://github.com/1Panel-dev/CordysCRM/releases/tag/v1.2.1) 发布
 - [ ] 2025.11：代码开源、正式发布
 
 ## 技术栈
