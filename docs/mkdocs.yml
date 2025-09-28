@@ -65,6 +65,7 @@ nav:
     - MCP 服务: mcp_server.md
     - 更新日志: changelog.md
     - 联系我们: contact.md
+    - 商业版本: enterprise.md
     
 markdown_extensions:
     - admonition
