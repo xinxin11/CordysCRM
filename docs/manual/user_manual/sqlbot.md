@@ -30,11 +30,20 @@ SQLBot 的安装教程请参考：[SQLBot 操作手册](https://dataease.cn/sqlb
 | sessionId | localStorage | x-auth-token | header |
 
 ![凭证配置](../img/user_manual/sqlbot-credentials.png)
-> **注意**：如果在问数过程中出现 401 错误，请检查上图这几个参数是否一致。
+:warning: **注意:** 如果在问数过程中出现 401 错误，请检查上图这几个参数是否一致。
 
-## 配置 SQLBot 应用
 
-### 在 Cordys CRM 中配置
+## 开放 Cordys CRM 的数据库端口
+
+为了确保 SQLBot 能够正常访问 Cordys CRM 的数据库，必须确保数据库端口对 SQLBot 可用。通过以下方式进行安装时，数据库端口并未暴露：
+
+- [1Panel 安装](../installation/1panel_installtion.md)
+- [在线安装](../installation/offline_installtion.md)
+- [Windows 安装](../installation/win.md)
+
+在集成 SQLBot 之前，请确认已开放数据库端口，以便 SQLBot 能够成功连接并执行查询操作。 
+
+## Cordys CRM 中配置应用
 
 1. 登录 Cordys CRM 系统
 2. 进入【系统】>【企业设置】>【三方设置】
@@ -45,6 +54,7 @@ SQLBot 的安装教程请参考：[SQLBot 操作手册](https://dataease.cn/sqlb
 ### 验证配置
 
 配置完成后：
+
 1. 开启智能问数功能
 2. 在系统右下角查看 SQLBot 应用图标
 3. 图标显示即表示配置成功
