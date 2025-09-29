@@ -41,6 +41,7 @@ theme:
 nav:
     - 产品介绍: index.md
     - 快速入门: quick_start.md
+    - 教学视频: https://www.bilibili.com/video/BV1bAHczdESW/
     - 系统架构: system_arch.md
     - 安装部署:
         - 1Panel 安装: installation/1panel_installtion.md
