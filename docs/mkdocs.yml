@@ -53,16 +53,15 @@ nav:
         - 命令行工具: installation/cli.md
         - 常见问题: installation/faq.md
     - 功能手册:
-        - 添加组织架构:
-              - 从企业微信同步: user_manual/sync_from_wecom.md
-              - 手动管理组织架构: user_manual/org_manage.md
-        - 配置角色与权限:  user_manual/role_permission.md
-        - 配置业务表单: user_manual/form_config.md
-        - 产品信息录入: user_manual/product_entry.md
-        - 日常销售管理: user_manual/sales_manage.md
-        - 移动端访问:  user_manual/mobile.md
-        - 接入 SQLBot 实现智能问数:  user_manual/sqlbot.md
-        - 接入 DataEase 实现数据分析:  user_manual/dataease.md
+        - 组织架构管理: user_manual/org_manage.md
+        - 角色与权限配置:  user_manual/role_permission.md
+        - 业务表单配置: user_manual/form_config.md
+        - 产品信息录入与管理: user_manual/product_entry.md
+        - 销售管理与运营: user_manual/sales_manage.md
+        - 企业微信集成与配置: user_manual/wecom.md
+        - 移动端访问与操作:  user_manual/mobile.md
+        - 接入 SQLBot 进行智能问数:  user_manual/sqlbot.md
+        - 接入 DataEase 进行数据分析:  user_manual/dataease.md
         - 接入 MaxKB 实现销售智能体:  user_manual/maxkb.md
     - MCP 服务: mcp_server.md
     - 更新日志: changelog.md
