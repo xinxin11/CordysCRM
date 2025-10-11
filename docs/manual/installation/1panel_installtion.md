@@ -35,7 +35,7 @@
 
     :warning: **注意:** 升级过程中如果发生错误，请参考：[**常见问题排查**](../installation/faq.md)。
 
-## 3 访问 Cordys CRM
+## 4 访问 Cordys CRM
 
 !!! Abstract ""
     安装成功后即可通过浏览器访问地址 `http://目标服务器 IP 地址:8081`，并使用默认的管理员用户和密码登录 Cordys CRM。
