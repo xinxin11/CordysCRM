@@ -7,8 +7,10 @@
     * 提前准备好 WSL 环境，开启 Hyper-V，并安装 Docker Desktop
 
 ## 2 安装部署
-### 2.1 图形化安装 (新手推荐)
+
 !!! Abstract ""
+
+    ### 2.1 图形化安装 (新手推荐)
 
     2.1.1 打开 docker desktop, 在顶部搜索栏输入 ` cordys ` 关键字进行搜索，然后下载镜像。
 
@@ -25,22 +27,33 @@
 
     :warning: **注意:** 端口号可以根据实际情况进行更改, 但要确保不冲突。
 
-### 2.2 命令行安装 (适合有docker基础的用户)
-!!! Abstract ""
+    ### 2.2 命令行安装 (适合有docker基础的用户) 
+
     2.2.1 打开 `PowerShell` 或 `cmd` 窗口, 执行以下命令拉取镜像（可选）：
+
     ```bash
     docker pull 1panel/cordys-crm:latest
     ```
+
     2.2.2 拉取完成后, 执行以下命令启动容器:
     ```
     docker run -d --name cordys-crm --restart unless-stopped -p 8081:8081 -p 8082:8082 -v ~/cordys:/opt/cordys 1panel/cordys-crm
     ```
    
     2.2.3 容器启动成功示例：
+
     ![容器启动成功](../img/installation/win_cmd_success.png)
+
     :warning: **注意:** 如果启动过程中发生错误，请参考：[**常见问题排查**](../installation/faq.md)。
 
-## 3 登录访问
+## 3 在线升级
+
+!!! Abstract ""
+
+    详细步骤参考 [**在线升级 Cordys CRM**](../online_installtion/#4) 。
+
+
+## 4 登录访问
 
 !!! Abstract ""
     * 安装成功后即可通过浏览器访问地址 `http://IP 地址:8081` (本机可用 127.0.0.1)，并使用默认的管理员用户和密码登录 Cordys CRM。

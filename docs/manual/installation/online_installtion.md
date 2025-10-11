@@ -21,12 +21,12 @@
 |------|:----------------|:--------------------------|
 | 22   | SSH             | 安装、升级及管理使用                |
 | 8081 | Web 服务端口        | 默认 Web 服务访问端口，可根据实际情况进行更改 |
-| 8082 | Mcp Server 服务端口 | 默认 Mcp 服务访问端口，可根据实际情况进行更改 |
+| 8082 | MCP Server 服务端口 | 默认 MCP 服务访问端口，可根据实际情况进行更改 |
 
 
 
 
-## 3 安装部署
+## 3 在线安装
 
 !!! Abstract ""
     在配置 Docker 环境的操作系统中，进行以下操作：
@@ -41,7 +41,39 @@
     1panel/cordys-crm
     ```
 
-# 4 登录访问
+
+## 4 在线升级
+
+!!! Abstract ""
+
+    ### 1. 停止并移除现有的容器
+    
+    ```
+    docker stop cordys-crm
+    docker rm cordys-crm
+    ```
+
+    ### 2. 拉取最新的镜像
+     
+    ```
+    docker pull 1panel/cordys-crm
+    ```
+
+    ### 3. 重新启动容器
+     
+    ```
+    docker run -d \
+    --name cordys-crm \
+    --restart unless-stopped \
+    -p 8081:8081 \
+    -p 8082:8082 \
+    -v ~/cordys:/opt/cordys \
+    1panel/cordys-crm
+    ```
+
+	:warning: **注意:** 升级前做好数据库的备份工作是一个良好的习惯，升级过程中如果发生错误，请参考：[**常见问题排查**](../installation/faq.md)。
+
+## 5 登录访问
 
 !!! Abstract ""
 
@@ -52,5 +84,5 @@
 
     默认密码：CordysCRM
     ```
-![访问 Cordys CRM](../img/installation/login.png)
+    ![访问 Cordys CRM](../img/installation/login.png)
 

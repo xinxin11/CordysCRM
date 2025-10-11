@@ -8,6 +8,7 @@
     - restart : 停止后启动 Cordys CRM 服务，相当于先执行 stop，再执行 start 命令
     - status : 查看 Cordys CRM 服务当前各容器运行状态
     - reload : 重载 Cordys CRM 服务配置文件
+    - uninstall : 卸载 Cordys CRM 服务，相关文件和数据会保留
 
 ## 2 csctl
 
@@ -26,4 +27,5 @@
         restart               重启 Cordys CRM 服务
         reload                重载 Cordys CRM 服务
         version               查看 Cordys CRM 版本
+        uninstall             卸载 Cordys CRM 服务
     ```
