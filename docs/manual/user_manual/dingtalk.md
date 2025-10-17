@@ -50,14 +50,28 @@
       ![配置](../img/user_manual/dingtalk_share_config.png)
 
     #### 6. 应用能力
+    
+    - **添加应用能力**
+        - 添加网页应用（此功能可选）。如果需要在钉钉工作台访问 Cordys CRM，则必须添加此功能。
+    
+      - **配置网页应用**
+          - **PC端访问地址**  
+            `https://你的域名`  
+            或  
+            `https://login.dingtalk.com/oauth2/auth?redirect_uri=https://你的域名%2Fa%2Fb&response_type=code&client_id=dingxxxxxxx&scope=openid&state=dddd&prompt=consent`
+    
+          - **移动端访问地址**  
+            `https://你的域名`  
+            或  
+            `https://login.dingtalk.com/oauth2/auth?redirect_uri=https://你的域名%2Fa%2Fbmobile&response_type=code&client_id=dingxxxxxxx&scope=openid&state=dddd&prompt=consent`
+    
+      - **配置分享设置**
+          - 配置回调地址：  
+            `https://你的域名`  
+            或  
+            `https://login.dingtalk.com`
 
-      - 添加应用能力-添加网页应用 此功能可选，如果需要在钉钉工作台访问 Cordys CRM 则必须添加此功能
-      - 配置网页应用 
-        pc端访问地址 https://yourdomain 或 https://login.dingtalk.com/oauth2/auth?redirect_uri=https%3A%2F%2Fwww.aaaaa.com%2Fa%2Fb&response_type=code&client_id=dingxxxxxxx&scope=openid&state=dddd&prompt=consent
-        移动端访问地址 https://yourdomain 或 https://login.dingtalk.com/oauth2/auth?redirect_uri=https%3A%2F%2Fwww.aaaaa.com%2Fa%2Fbmobile&response_type=code&client_id=dingxxxxxxx&scope=openid&state=dddd&prompt=consent
-      - 配置分享设置-配置回调  https://yourdomain 或 https://login.dingtalk.com
-      ![配置](../img/user_manual/dingtalk_net_work.png)
-      ![配置](../img/user_manual/dingtalk_net_work_config.png)
+        ![配置](../img/user_manual/dingtalk_net_work_config.png)
 
 
     #### 7. 数据准备
