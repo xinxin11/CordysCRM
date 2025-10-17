@@ -19,13 +19,15 @@
 
     在钉钉管理后台应用开发页面选择企业内部应用-钉钉应用-创建自建应用，在应用列表页面点击更多，查看应用详情-应用凭证与基础信息，并获取以下关键凭证：
 
-     - 原企业内部应用AgentId (内部应用id，用于发送钉钉的应用通知) 
-     - 应用的 Client ID (应用id)
-     - 应用的 Client Secret  (应用密钥)
+     - 创建应用
 
       ![配置](../img/user_manual/dingtalk_app.png)
-      ![配置](../img/user_manual/dingtalk_app_create.png)
-      ![配置](../img/user_manual/dingtalk_check.png)
+     
+     - 点击应用详情获取配置信息：
+         - 原企业内部应用AgentId (内部应用id，用于发送钉钉的应用通知) 
+         - 应用的 Client ID (应用id)
+         - 应用的 Client Secret  (应用密钥)
+
       ![配置](../img/user_manual/dingtalk_config.png)
 
 
@@ -46,9 +48,7 @@
       - 安全设置-服务器IP出口配置应用的"可信 IP 白名单"，确保调用 API 时不被拒绝, 配置回调 URL
       - 分享设置-配置回调 URL(用户免登录)
 
-
       ![配置](../img/user_manual/dingtalk_app_config.png)
-      ![配置](../img/user_manual/dingtalk_share_config.png)
 
     #### 6. 应用能力
     
@@ -66,6 +66,8 @@
             或  
             `https://login.dingtalk.com/oauth2/auth?redirect_uri=https://你的域名%2Fa%2Fbmobile&response_type=code&client_id=dingxxxxxxx&scope=openid&state=dddd&prompt=consent`
     
+        ![配置](../img/user_manual/dingtalk_net_work_settings.png)
+
       - **配置分享设置**
           - 配置回调地址：  
             `https://你的域名`  
@@ -107,11 +109,15 @@
 
        - 所有钉钉配置均需要应用发布成功后生效
          
-      👉 官方文档：[通讯录同步](https://open.dingtalk.com/document/orgapp/contacts-overview)
+      👉 钉钉官方文档：[通讯录同步](https://open.dingtalk.com/document/orgapp/contacts-overview)
+
+      ![发布应用](../img/user_manual/dingtalk_public.png)
+
 
 ## 钉钉工作台访问 Cordys CRM
 
 !!! Abstract ""
 
     ![工作台访问](../img/user_manual/dingtalk_workbench.png)
+
     ![移动端界面](../img/user_manual/dingtalk_workbench_main.png)
