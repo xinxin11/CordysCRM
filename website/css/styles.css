@@ -5,9 +5,9 @@
 /* CSS Custom Properties (Variables) */
 :root {
   /* Colors */
-  --primary-color: #02A6AB;
-  --primary-dark: #028E92;
-  --primary-light: #03C4C9;
+  --primary-color: #3370ff;
+  --primary-dark: #1e60fb;
+  --primary-light: #618ef8;
   --primary-alpha: rgba(2, 166, 171, 0.1);
   
   --text-primary: #1A202C;
